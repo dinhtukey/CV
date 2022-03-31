@@ -102,6 +102,12 @@ figure {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
+  #colorlib-aside .role {
+    font-size: 14px;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-style: italic;
+  }
   #colorlib-aside .position {
     display: block;
     margin-bottom: 2em;
@@ -1468,7 +1474,7 @@ body.offcanvas {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #fff;
+  background: none;
   color: white;
   cursor: pointer;
   padding: 15px;
