@@ -1485,3 +1485,10 @@ body.offcanvas {
   color: red;
   font-size: 40px;
 }
+
+#count {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  z-index: 99;
+}

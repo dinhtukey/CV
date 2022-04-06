@@ -3,7 +3,14 @@
 	'use strict';
 
 
-
+	const countEl = document.getElementById("count");
+	var test = function() {
+		fetch('https://api.countapi.xyz/hit/dinhtukey.github.ioportfolio/visits')
+		.then(res => res.json())
+		.then(res => {
+			countEl.innerHTML = res.value;
+		})
+	}
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -299,7 +306,7 @@
 		navigationSection();
 		// windowScroll();
 
-
+		test();
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
