@@ -328,11 +328,9 @@
 	
 	// When the user clicks on the button, scroll to the top of the document
 	var topFunction = function() {
-
 		$('#back-to-top').on('click', function(event){
-			event.preventDefault();
-			$('html, body').animate({ scrollTop: 0 }, 'fast');
-
+			const element = document.getElementById("colorlib-page");
+  			element.scrollIntoView({behavior: "smooth"});
 		});
 
 
